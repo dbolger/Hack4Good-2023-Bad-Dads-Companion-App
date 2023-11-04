@@ -20,6 +20,13 @@
 		375597EC2AF5F363007A3A6B /* ModuleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597EB2AF5F363007A3A6B /* ModuleClass.swift */; };
 		375597EE2AF5F5C9007A3A6B /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597ED2AF5F5C9007A3A6B /* Schedule.swift */; };
 		375597F02AF5F6AF007A3A6B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597EF2AF5F6AF007A3A6B /* UserViewModel.swift */; };
+		375597F62AF6515E007A3A6B /* MyResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597F52AF6515E007A3A6B /* MyResources.swift */; };
+		375597F82AF65168007A3A6B /* MyCourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597F72AF65168007A3A6B /* MyCourses.swift */; };
+		375597FA2AF65172007A3A6B /* MySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597F92AF65172007A3A6B /* MySettings.swift */; };
+		375597FC2AF65277007A3A6B /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597FB2AF65277007A3A6B /* InitialView.swift */; };
+		375597FE2AF659B0007A3A6B /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597FD2AF659B0007A3A6B /* Contacts.swift */; };
+		375598002AF65A18007A3A6B /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597FF2AF65A18007A3A6B /* Articles.swift */; };
+		375598022AF65A24007A3A6B /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375598012AF65A24007A3A6B /* Questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,13 @@
 		375597EB2AF5F363007A3A6B /* ModuleClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleClass.swift; sourceTree = "<group>"; };
 		375597ED2AF5F5C9007A3A6B /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		375597EF2AF5F6AF007A3A6B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		375597F52AF6515E007A3A6B /* MyResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResources.swift; sourceTree = "<group>"; };
+		375597F72AF65168007A3A6B /* MyCourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCourses.swift; sourceTree = "<group>"; };
+		375597F92AF65172007A3A6B /* MySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettings.swift; sourceTree = "<group>"; };
+		375597FB2AF65277007A3A6B /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		375597FD2AF659B0007A3A6B /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		375597FF2AF65A18007A3A6B /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		375598012AF65A24007A3A6B /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +163,10 @@
 		375597E12AF5EFB2007A3A6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				375597F42AF65151007A3A6B /* Settings */,
+				375597F32AF6514A007A3A6B /* Courses */,
+				375597F22AF6513F007A3A6B /* Resources */,
+				375597FB2AF65277007A3A6B /* InitialView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +177,33 @@
 				375597EF2AF5F6AF007A3A6B /* UserViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		375597F22AF6513F007A3A6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				375597F52AF6515E007A3A6B /* MyResources.swift */,
+				375598012AF65A24007A3A6B /* Questions.swift */,
+				375597FF2AF65A18007A3A6B /* Articles.swift */,
+				375597FD2AF659B0007A3A6B /* Contacts.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		375597F32AF6514A007A3A6B /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				375597F72AF65168007A3A6B /* MyCourses.swift */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		375597F42AF65151007A3A6B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				375597F92AF65172007A3A6B /* MySettings.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,10 +336,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				375597E52AF5F252007A3A6B /* Task.swift in Sources */,
+				375598002AF65A18007A3A6B /* Articles.swift in Sources */,
 				375597E72AF5F29B007A3A6B /* Quiz.swift in Sources */,
+				375597FA2AF65172007A3A6B /* MySettings.swift in Sources */,
+				375597F82AF65168007A3A6B /* MyCourses.swift in Sources */,
+				375598022AF65A24007A3A6B /* Questions.swift in Sources */,
 				375597B62AF5E602007A3A6B /* ContentView.swift in Sources */,
 				375597E92AF5F2A6007A3A6B /* Question.swift in Sources */,
+				375597FE2AF659B0007A3A6B /* Contacts.swift in Sources */,
 				375597EC2AF5F363007A3A6B /* ModuleClass.swift in Sources */,
+				375597F62AF6515E007A3A6B /* MyResources.swift in Sources */,
+				375597FC2AF65277007A3A6B /* InitialView.swift in Sources */,
 				375597B42AF5E602007A3A6B /* MainApp.swift in Sources */,
 				375597EE2AF5F5C9007A3A6B /* Schedule.swift in Sources */,
 				375597F02AF5F6AF007A3A6B /* UserViewModel.swift in Sources */,

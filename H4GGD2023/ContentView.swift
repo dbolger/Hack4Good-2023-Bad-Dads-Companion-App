@@ -9,7 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("GD")
+        TabView {
+            MyCourses()
+                .badge(2)
+                .tabItem {
+                    Label("Courses", systemImage: "books.vertical.fill")
+                }
+            MyResources()
+                .tabItem {
+                    Label("Resources", systemImage: "archivebox.fill")
+                }
+            MySettings()
+                .tabItem {
+                    Label("Settings", systemImage: "gearshape.fill")
+                }
+        }
+
     }
 }
 
