@@ -13,6 +13,7 @@
 		375597C52AF5E603007A3A6B /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597C42AF5E603007A3A6B /* AppTests.swift */; };
 		375597CF2AF5E603007A3A6B /* MainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597CE2AF5E603007A3A6B /* MainUITests.swift */; };
 		375597D12AF5E603007A3A6B /* MainUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597D02AF5E603007A3A6B /* MainUITestsLaunchTests.swift */; };
+		375597DE2AF5ED9A007A3A6B /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375597DD2AF5ED9A007A3A6B /* RequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		375597CA2AF5E603007A3A6B /* H4GGD2023UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H4GGD2023UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		375597CE2AF5E603007A3A6B /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		375597D02AF5E603007A3A6B /* MainUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		375597DD2AF5ED9A007A3A6B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				375597B32AF5E602007A3A6B /* MainApp.swift */,
 				375597B52AF5E602007A3A6B /* ContentView.swift */,
 				375597B72AF5E603007A3A6B /* Assets.xcassets */,
+				375597DD2AF5ED9A007A3A6B /* RequestManager.swift */,
 			);
 			path = H4GGD2023;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375597DE2AF5ED9A007A3A6B /* RequestManager.swift in Sources */,
 				375597B62AF5E602007A3A6B /* ContentView.swift in Sources */,
 				375597B42AF5E602007A3A6B /* MainApp.swift in Sources */,
 			);
@@ -409,7 +413,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"H4GGD2023/Preview Content\"";
 				DEVELOPMENT_TEAM = 2DK3287EQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -439,7 +442,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"H4GGD2023/Preview Content\"";
 				DEVELOPMENT_TEAM = 2DK3287EQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
