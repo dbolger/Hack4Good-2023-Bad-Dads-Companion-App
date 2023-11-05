@@ -258,7 +258,7 @@ struct UnfinishedModuleRow: View {
                         .padding(.leading, 6)
                     VStack(alignment: .leading) {
                         Text("Take Quiz")
-                        Text("Module 2: Quiz Name")
+                        Text("Module 7: Conflict")
                     }
                     VStack {
                         Spacer()
@@ -273,9 +273,7 @@ struct UnfinishedModuleRow: View {
             Spacer()
         }.padding(.bottom,20)
         .sheet(isPresented: $showingSheet) {
-            Text("Module 7: Module Title")
-                .font(.title2)
-            Text("This quiz covers the information we discussed on Tuesday, October 31st. Feel free to review your notes from this module while you take the quiz.")
+            QuizSheet()
         }
     }
 }

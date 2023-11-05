@@ -31,7 +31,7 @@ struct QuizAlert: View {
         .frame(maxHeight: 80)
         .padding(.init(top: 4, leading: 20, bottom: 4, trailing: 2))
         .foregroundColor(.white)
-        .background(.ultraThinMaterial).cornerRadius(10)
+        .background(.transparentBlack).cornerRadius(10)
     }
 }
 

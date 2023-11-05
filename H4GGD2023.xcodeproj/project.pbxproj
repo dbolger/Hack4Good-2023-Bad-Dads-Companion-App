@@ -32,6 +32,7 @@
 		375598092AF724F2007A3A6B /* ModuleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375598082AF724F2007A3A6B /* ModuleRow.swift */; };
 		3755980B2AF728E7007A3A6B /* QuizAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3755980A2AF728E7007A3A6B /* QuizAlert.swift */; };
 		3755980D2AF73892007A3A6B /* ArticleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3755980C2AF73892007A3A6B /* ArticleCard.swift */; };
+		37F850C22AF7FE3F00E99970 /* QuizSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F850C12AF7FE3F00E99970 /* QuizSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		375598082AF724F2007A3A6B /* ModuleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleRow.swift; sourceTree = "<group>"; };
 		3755980A2AF728E7007A3A6B /* QuizAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAlert.swift; sourceTree = "<group>"; };
 		3755980C2AF73892007A3A6B /* ArticleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCard.swift; sourceTree = "<group>"; };
+		37F850C12AF7FE3F00E99970 /* QuizSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				375597F72AF65168007A3A6B /* MyCourses.swift */,
+				37F850C12AF7FE3F00E99970 /* QuizSheet.swift */,
 				375598082AF724F2007A3A6B /* ModuleRow.swift */,
 			);
 			path = Courses;
@@ -364,6 +367,7 @@
 				375598052AF71022007A3A6B /* Colors.swift in Sources */,
 				375597FA2AF65172007A3A6B /* MySettings.swift in Sources */,
 				375597F82AF65168007A3A6B /* MyCourses.swift in Sources */,
+				37F850C22AF7FE3F00E99970 /* QuizSheet.swift in Sources */,
 				375598022AF65A24007A3A6B /* Questions.swift in Sources */,
 				375597B62AF5E602007A3A6B /* ContentView.swift in Sources */,
 				375597E92AF5F2A6007A3A6B /* Question.swift in Sources */,

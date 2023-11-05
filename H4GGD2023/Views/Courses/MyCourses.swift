@@ -20,7 +20,7 @@ struct MyCourses: View {
                 }
                 .padding()
                 .background(.ultraThinMaterial)
-                .frame(width: .infinity, height: 40)
+                .frame(height: 40)
                 VStack {
                     ModuleRow()
                     ModuleRow2()

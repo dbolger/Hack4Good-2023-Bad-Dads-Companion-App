@@ -10,6 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house.fill")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.black)
+                        .foregroundColor(Color.black)
+                }
             MyCourses()
                 .tabItem {
                     Label("Courses", systemImage: "books.vertical.fill")
@@ -32,8 +39,7 @@ struct ContentView: View {
                         .foregroundColor(Color.black)
                 }
         }
-        .toolbar(.visible, for: .tabBar)
-        .toolbarBackground(Color.yellow, for: .tabBar)
+        //.toolbar(.visible, for: .tabBar)
     }
 }
 
