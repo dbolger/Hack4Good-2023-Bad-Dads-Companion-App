@@ -11,6 +11,7 @@ struct MyResources: View {
     var body: some View {
         NavigationView {
             List {
+                
                 NavigationLink {
                     Contacts()
                 } label: {
@@ -27,8 +28,11 @@ struct MyResources: View {
                     Text("FAQ")
                 }
             }
-            .listStyle(.inset)
+            .scrollContentBackground(.hidden)
+            .listStyle(.insetGrouped)
             .navigationTitle("My Resources")
+            .background(Color.backgroundColor)
+            .foregroundColor(.black)
         }
     }
 }

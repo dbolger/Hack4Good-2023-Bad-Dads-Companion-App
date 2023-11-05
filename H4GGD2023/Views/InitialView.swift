@@ -55,6 +55,7 @@ struct InitialView: View {
                 Alert(title: Text("Send an email"), message: Text("with a link that the client can use to sign in instead of remembering a password"))
             }
         }
+        
     }
 }
 

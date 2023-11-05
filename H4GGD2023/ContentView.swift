@@ -11,20 +11,29 @@ struct ContentView: View {
     var body: some View {
         TabView {
             MyCourses()
-                .badge(2)
                 .tabItem {
                     Label("Courses", systemImage: "books.vertical.fill")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.black)
+                        .foregroundColor(Color.black)
                 }
             MyResources()
                 .tabItem {
                     Label("Resources", systemImage: "archivebox.fill")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.black)
+                        .foregroundColor(Color.black)
                 }
             MySettings()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.black)
+                        .foregroundColor(Color.black)
                 }
         }
-
+        .toolbar(.visible, for: .tabBar)
+        .toolbarBackground(Color.yellow, for: .tabBar)
     }
 }
 

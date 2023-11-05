@@ -11,250 +11,53 @@ struct Articles: View {
     @State private var showingSheet = false
     var body: some View {
         ScrollView {
+            HStack {
+                Text("Good Dads Blog")
+                    .font(.largeTitle)
+                    .padding(.init(top: 0, leading: 20, bottom: 10, trailing: 10))
+                    .fontWeight(.bold)
+                Spacer()
+            }
             VStack {
                 HStack {
                     Text("Community")
                         .font(.title3)
+                        .fontWeight(.bold)
                     Spacer()
                 }
                 .padding(.init(top: 0, leading: 20, bottom: 0, trailing: 0))
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
+                       ArticleCard()
+                        ArticleCard()
+                        ArticleCard()
+                        ArticleCard()
+                        ArticleCard()
+                        ArticleCard()                       
                     }
-                    
                 }
-            }
-            VStack {
                 HStack {
-                    Text("Development")
+                    Text("Activities")
                         .font(.title3)
+                        .fontWeight(.medium)
                     Spacer()
                 }
                 .padding(.init(top: 0, leading: 20, bottom: 0, trailing: 0))
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
+                        ArticleCard()
+                        ArticleCard()
+                        ArticleCard()
+                        ArticleCard()
+                        ArticleCard()
+                        ArticleCard()
                     }
-                    
                 }
+                
             }
-            VStack {
-                HStack {
-                    Text("Character")
-                        .font(.title3)
-                    Spacer()
-                }
-                .padding(.init(top: 0, leading: 20, bottom: 0, trailing: 0))
-                ScrollView(.horizontal) {
-                    HStack {
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                    }
-                    
-                }
-            }
-            VStack {
-                HStack {
-                    Text("Health")
-                        .font(.title3)
-                    Spacer()
-                }
-                .padding(.init(top: 0, leading: 20, bottom: 0, trailing: 0))
-                ScrollView(.horizontal) {
-                    HStack {
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
-                        Button {
-                            showingSheet.toggle()
-                        } label: {
-                            VStack {
-                                Image("tempImage")
-                                    .resizable()
-                                    .frame(width: 140, height: 140)
-                                    .scaledToFit()
-                                    .padding()
-                                Text("Article Title")
-                            }
-                            .padding(.bottom, 20)
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            Text("this is a sheet")
-                        }
-                    }
-                    
-                }
-            }
+          
         }
-        .navigationTitle("Good Dads Blog")
-        .navigationBarTitleDisplayMode(.inline)
+        .background(Color.backgroundColor)
     }
 }
 
